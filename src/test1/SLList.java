@@ -8,7 +8,6 @@ public class SLList {
     public  SLList(int x)
     {
         first = new IntNode(x,null);
-
     }
     public  static void main(String[] args)
     {
@@ -24,7 +23,7 @@ public class SLList {
     }
     public void addLast(int x)
     {
-        SLList last = new SLList(x);
+
         IntNode p = first;
 
         while (null != p.next)
@@ -32,7 +31,7 @@ public class SLList {
             p =  p.next;
 
         }
-        p.next= last.first;
+        p.next=  new IntNode(x,null);
 
     }
 }
